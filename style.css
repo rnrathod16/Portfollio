@@ -1,0 +1,727 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.back {
+    background-image: url("images/Ritesh.png");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.back3 {
+    background-image: url("images/back3.png");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.back3 h1 {
+    position: absolute;
+    top: 33px;
+    left: 661px;
+    font-size: 61px;
+    text-shadow: 3px 1px;
+}
+
+.back2 {
+    /* background-image: url("back2.png"); */
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    background-color: rgb(201, 201, 201);
+}
+
+.back .ri {
+    position: absolute;
+    color: rgb(204, 204, 204);
+    font-size: 31px;
+    left: 135px;
+    top: 288px;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text2 5s infinite alternate;
+}
+
+@keyframes text2 {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 9ch;
+    }
+}
+
+.back img {
+    position: absolute;
+    height: 192px;
+    left: 135px;
+    top: 550px;
+}
+
+.img_res {
+    display: none;
+}
+
+.r {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 131px;
+    top: 317px;
+    font-size: 63px;
+    text-shadow: -6px -2px #cac9d5;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 5s infinite alternate;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 15ch;
+    }
+}
+
+.w {
+    position: absolute;
+    color: #1b48ab;
+    top: 387px;
+    left: 139px;
+    font-size: 20px;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text1 5s infinite alternate;
+}
+
+@keyframes text1 {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 27ch;
+    }
+}
+
+.about {
+    position: absolute;
+    color: white;
+    font-size: 63px;
+    left: 358px;
+    top: 70px;
+}
+
+.back2 img {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 792px;
+}
+
+.para {
+    text-align: justify;
+    width: 30%;
+    height: 50%;
+    top: 222px;
+    left: 139px;
+    color: rgb(77, 74, 74);
+    position: absolute;
+    font-size: 23px;
+}
+
+.bl {
+    background-color: #1b48ab;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.bl h1 {
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 17px;
+    left: 573px;
+    font-size: 60px;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: n 3s infinite alternate;
+}
+
+@keyframes n {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 10ch;
+    }
+}
+
+.sb img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.gri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.new img {
+    width: 439px;
+    height: 598px;
+    animation: la 3s infinite;
+}
+
+@keyframes la {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 439px;
+        height: 598px;
+    }
+}
+
+.skills {
+    list-style: none;
+    position: absolute;
+    top: 160px;
+    width: 27%;
+    height: 23vh;
+    left: 112px;
+}
+
+.skills2 {
+    list-style: none;
+    position: absolute;
+    top: 160px;
+    width: 27%;
+    height: 23vh;
+    left: 882px;
+}
+
+.skills li {
+    margin: 20px 0;
+}
+
+.skills2 li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: #b7e0ff;
+    display: block;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 5px 6px #91919e;
+}
+
+.bar span {
+    height: 18px;
+    border-radius: 22px;
+    float: left;
+    background: #1b48ab;
+}
+
+.bar .NodeJS {
+    width: 70%;
+    animation: node 5s infinite;
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.bar .ct {
+    width: 65%;
+    animation: ct 5s infinite;
+}
+
+@keyframes ct {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+.bar .ExpressJS {
+    width: 77%;
+    animation: ExpressJS 5s infinite;
+}
+
+@keyframes ExpressJS {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 77%;
+    }
+}
+
+.bar .MongoDB {
+    width: 75%;
+    animation: MongoDB 5s infinite;
+}
+
+@keyframes MongoDB {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.bar .PHP {
+    width: 85%;
+    animation: PHP 5s infinite;
+}
+
+@keyframes PHP {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.bar .MySQL {
+    width: 85%;
+    animation: MySQL 5s infinite;
+}
+
+@keyframes MySQL {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.bar .Html {
+    width: 90%;
+    animation: Html 5s infinite;
+}
+
+@keyframes Html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.bar .css {
+    width: 86%;
+    animation: css 5s infinite;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+.bar .Javascript {
+    width: 80%;
+    animation: Javascript 5s infinite;
+}
+
+@keyframes Javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.bar .Linux {
+    width: 80%;
+    animation: Linux 5s infinite;
+}
+
+@keyframes Linux {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.bar .cpp {
+    width: 86%;
+    animation: cpp 5s infinite;
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+.bar .c {
+    width: 88%;
+    animation: c 5s infinite;
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 88%;
+    }
+}
+
+.back3 .r {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: r 3s infinite alternate;
+}
+
+@keyframes r {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 8ch;
+    }
+}
+
+.plane {
+    position: absolute;
+    top: 300px;
+    left: 519px;
+    height: 280px;
+    width: 354px;
+}
+
+.back4 {
+    background-image: url("images/back4.png");
+    width: 100%;
+    height: 120vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.t {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 49px;
+    top: 133px;
+    font-size: 50px;
+    text-shadow: -6px -2px #cac9d5;
+}
+
+.m {
+    position: absolute;
+    color: #1b48ab;
+    top: 210px;
+    left: 67px;
+    font-size: 20px;
+}
+
+.da {
+    top: 246px;
+    left: 63px;
+    position: absolute;
+    color: #1b48ab;
+}
+
+.twot {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 49px;
+    top: 303px;
+    font-size: 50px;
+    text-shadow: -6px -2px #cac9d5;
+}
+
+.twom {
+    position: absolute;
+    color: #1b48ab;
+    top: 376px;
+    left: 67px;
+    font-size: 20px;
+}
+
+.twoda {
+    top: 408px;
+    left: 63px;
+    position: absolute;
+    color: #1b48ab;
+}
+
+.threet {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 49px;
+    top: 469px;
+    font-size: 50px;
+    text-shadow: -6px -2px #cac9d5;
+}
+
+.threem {
+    position: absolute;
+    color: #1b48ab;
+    top: 542px;
+    left: 67px;
+    font-size: 20px;
+}
+
+.threeda {
+    top: 574px;
+    left: 63px;
+    position: absolute;
+    color: #1b48ab;
+}
+
+.fourt {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 800px;
+    top: 133px;
+    font-size: 50px;
+    text-shadow: -6px -2px #cac9d5;
+}
+
+.fourm {
+    position: absolute;
+    color: #1b48ab;
+    top: 210px;
+    left: 820px;
+    font-size: 20px;
+}
+
+.fourda {
+    top: 246px;
+    left: 820px;
+    position: absolute;
+    color: #1b48ab;
+}
+
+.fivet {
+    position: absolute;
+    color: rgb(77, 74, 74);
+    left: 800px;
+    top: 316px;
+    font-size: 50px;
+    text-shadow: -6px -2px #cac9d5;
+}
+
+.fivem {
+    position: absolute;
+    color: #1b48ab;
+    top: 376px;
+    left: 820px;
+    font-size: 20px;
+}
+
+.fiveda {
+    top: 408px;
+    left: 820px;
+    position: absolute;
+    color: #1b48ab;
+}
+
+.lesson {
+    float: left;
+    width: 17%;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.lesson-icon {
+    position: relative;
+}
+
+.lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+
+.lesson-icon img {
+    height: 300px;
+    width: 300px;
+}
+
+.foot {
+    width: 100%;
+    height: 200px;
+    background-color: #1b48ab;
+    position: relative;
+}
+
+.btn-wrapper {
+    position: absolute;
+    top: 428px;
+    left: 135px;
+}
+
+.btn-wrapper a {
+    margin-right: 20px;
+}
+
+.ba {
+    background-color: white;
+    right: 60px;
+    top: 30px;
+    height: 74px;
+    width: 215px;
+    border-radius: 62px;
+    position: absolute;
+}
+
+.ba .link {
+    position: absolute;
+    top: 10px;
+    right: 145px;
+}
+
+.ba .mail {
+    position: absolute;
+    top: 10px;
+    right: 83px;
+}
+
+.ba .git {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+
+.bot {
+    color: white;
+    bottom: 0%;
+    left: 42%;
+    position: absolute;
+}
+
+.add {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+@media (max-width:375px) {
+    .back {
+        display: flex;
+        flex-direction: row;
+        background-image: url("resoponsive/s.png");
+        width: 908px;
+        height: 856px;
+    }
+    .back .ri {
+        left: 427px;
+        top: 182px;
+    }
+    .r {
+        left: 264px;
+        top: 235px;
+    }
+    .w {
+        top: 325px;
+        left: 363px;
+    }
+    .back img {
+        height: 82px;
+        left: 471px;
+        top: 454px;
+    }
+    .btn-wrapper {
+        top: 378px;
+        left: 409px;
+        width: 250px;
+    }
+    .back .img_res {
+        display: block;
+        position: absolute;
+        top: 566px;
+        left: 352px;
+        height: 283px;
+    }
+    .back2 {
+        width: 250%;
+    }
+    .bl h1 {
+        left: 364px;
+    }
+    .para {
+        top: 162px;
+        left: 64px;
+    }
+    .new img {
+        width: 386px;
+        height: 598px;
+        position: absolute;
+        left: 412px;
+    }
+    .back3 {
+        width: 250%;
+    }
+    .back3 h1 {
+        left: 404px;
+    }
+    .plane {
+        left: 295px;
+        height: 223px;
+        width: 245px;
+    }
+    .skills {
+        left: 42px;
+    }
+    .skills2 {
+        left: 598px;
+    }
+    .back4 {
+        width: 250%;
+    }
+    .res {
+        margin-left: 53px;
+        width: 344px;
+    }
+    .foot {
+        width: 250%;
+    }
+}
