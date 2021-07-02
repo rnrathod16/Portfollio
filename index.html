@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .back {
+            background-image: url("Ritesh.png");
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .back3 {
+            background-image: url("back3.png");
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .back3 h1 {
+            position: absolute;
+            top: 33px;
+            left: 661px;
+            font-size: 61px;
+            text-shadow: 3px 1px;
+        }
+        
+        .back2 {
+            /* background-image: url("back2.png"); */
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            position: relative;
+            background-color: rgb(201, 201, 201);
+        }
+        
+        .back .ri {
+            position: absolute;
+            color: rgb(204, 204, 204);
+            font-size: 31px;
+            left: 135px;
+            top: 288px;
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: text2 5s infinite alternate;
+        }
+        
+        @keyframes text2 {
+            0% {
+                width: 0ch;
+            }
+            50% {
+                width: 9ch;
+            }
+        }
+        
+        .back img {
+            position: absolute;
+            height: 192px;
+            left: 135px;
+            top: 550px;
+        }
+        
+        .r {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 131px;
+            top: 317px;
+            font-size: 63px;
+            text-shadow: -6px -2px #cac9d5;
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: text 5s infinite alternate;
+        }
+        
+        @keyframes text {
+            0% {
+                width: 0ch;
+            }
+            50% {
+                width: 14ch;
+            }
+        }
+        
+        .w {
+            position: absolute;
+            color: #1b48ab;
+            top: 387px;
+            left: 139px;
+            font-size: 20px;
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: text1 5s infinite alternate;
+        }
+        
+        @keyframes text1 {
+            0% {
+                width: 0ch;
+            }
+            50% {
+                width: 27ch;
+            }
+        }
+        
+        .about {
+            position: absolute;
+            color: white;
+            font-size: 63px;
+            left: 358px;
+            top: 70px;
+        }
+        
+        .back2 img {
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 792px;
+        }
+        
+        .para {
+            text-align: justify;
+            width: 30%;
+            height: 50%;
+            top: 222px;
+            left: 139px;
+            color: rgb(77, 74, 74);
+            position: absolute;
+            font-size: 23px;
+        }
+        
+        .bl {
+            background-color: #1b48ab;
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+        
+        .bl h1 {
+            color: white;
+            position: relative;
+            text-align: center;
+            top: 17px;
+            left: 573px;
+            font-size: 60px;
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: n 3s infinite alternate;
+        }
+        
+        @keyframes n {
+            0% {
+                width: 0ch;
+            }
+            50% {
+                width: 10ch;
+            }
+        }
+        
+        .sb img {
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+        
+        .gri {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .new img {
+            width: 439px;
+            height: 598px;
+            animation: la 3s infinite;
+        }
+        
+        @keyframes la {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            50% {
+                width: 439px;
+                height: 598px;
+            }
+        }
+        
+        .skills {
+            list-style: none;
+            position: absolute;
+            top: 160px;
+            width: 27%;
+            height: 23vh;
+            left: 112px;
+        }
+        
+        .skills2 {
+            list-style: none;
+            position: absolute;
+            top: 160px;
+            width: 27%;
+            height: 23vh;
+            left: 882px;
+        }
+        
+        .skills li {
+            margin: 20px 0;
+        }
+        
+        .skills2 li {
+            margin: 20px 0;
+        }
+        
+        .bar {
+            background: #b7e0ff;
+            display: block;
+            height: 18px;
+            border: 1px solid black;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 5px 6px #91919e;
+        }
+        
+        .bar span {
+            height: 18px;
+            border-radius: 22px;
+            float: left;
+            background: #1b48ab;
+        }
+        
+        .bar .NodeJS {
+            width: 70%;
+            animation: node 5s infinite;
+        }
+        
+        @keyframes node {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 70%;
+            }
+        }
+        
+        .bar .ct {
+            width: 65%;
+            animation: ct 5s infinite;
+        }
+        
+        @keyframes ct {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 65%;
+            }
+        }
+        
+        .bar .ExpressJS {
+            width: 77%;
+            animation: ExpressJS 5s infinite;
+        }
+        
+        @keyframes ExpressJS {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 77%;
+            }
+        }
+        
+        .bar .MongoDB {
+            width: 75%;
+            animation: MongoDB 5s infinite;
+        }
+        
+        @keyframes MongoDB {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 75%;
+            }
+        }
+        
+        .bar .PHP {
+            width: 85%;
+            animation: PHP 5s infinite;
+        }
+        
+        @keyframes PHP {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 85%;
+            }
+        }
+        
+        .bar .MySQL {
+            width: 85%;
+            animation: MySQL 5s infinite;
+        }
+        
+        @keyframes MySQL {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 85%;
+            }
+        }
+        
+        .bar .Html {
+            width: 90%;
+            animation: Html 5s infinite;
+        }
+        
+        @keyframes Html {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 90%;
+            }
+        }
+        
+        .bar .css {
+            width: 86%;
+            animation: css 5s infinite;
+        }
+        
+        @keyframes css {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 86%;
+            }
+        }
+        
+        .bar .Javascript {
+            width: 80%;
+            animation: Javascript 5s infinite;
+        }
+        
+        @keyframes Javascript {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 80%;
+            }
+        }
+        
+        .bar .Linux {
+            width: 80%;
+            animation: Linux 5s infinite;
+        }
+        
+        @keyframes Linux {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 80%;
+            }
+        }
+        
+        .bar .cpp {
+            width: 86%;
+            animation: cpp 5s infinite;
+        }
+        
+        @keyframes cpp {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 86%;
+            }
+        }
+        
+        .bar .c {
+            width: 88%;
+            animation: c 5s infinite;
+        }
+        
+        @keyframes c {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 88%;
+            }
+        }
+        
+        .back3 .r {
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: r 3s infinite alternate;
+        }
+        
+        @keyframes r {
+            0% {
+                width: 0ch;
+            }
+            50% {
+                width: 8ch;
+            }
+        }
+        
+        .plane {
+            position: absolute;
+            top: 300px;
+            left: 519px;
+            height: 280px;
+            width: 354px;
+        }
+        
+        .back4 {
+            background-image: url("back4.png");
+            width: 100%;
+            height: 120vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .t {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 49px;
+            top: 133px;
+            font-size: 50px;
+            text-shadow: -6px -2px #cac9d5;
+        }
+        
+        .m {
+            position: absolute;
+            color: #1b48ab;
+            top: 210px;
+            left: 67px;
+            font-size: 20px;
+        }
+        
+        .da {
+            top: 246px;
+            left: 63px;
+            position: absolute;
+            color: #1b48ab;
+        }
+        
+        .twot {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 49px;
+            top: 303px;
+            font-size: 50px;
+            text-shadow: -6px -2px #cac9d5;
+        }
+        
+        .twom {
+            position: absolute;
+            color: #1b48ab;
+            top: 376px;
+            left: 67px;
+            font-size: 20px;
+        }
+        
+        .twoda {
+            top: 408px;
+            left: 63px;
+            position: absolute;
+            color: #1b48ab;
+        }
+        
+        .threet {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 49px;
+            top: 469px;
+            font-size: 50px;
+            text-shadow: -6px -2px #cac9d5;
+        }
+        
+        .threem {
+            position: absolute;
+            color: #1b48ab;
+            top: 542px;
+            left: 67px;
+            font-size: 20px;
+        }
+        
+        .threeda {
+            top: 574px;
+            left: 63px;
+            position: absolute;
+            color: #1b48ab;
+        }
+        
+        .fourt {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 800px;
+            top: 133px;
+            font-size: 50px;
+            text-shadow: -6px -2px #cac9d5;
+        }
+        
+        .fourm {
+            position: absolute;
+            color: #1b48ab;
+            top: 210px;
+            left: 820px;
+            font-size: 20px;
+        }
+        
+        .fourda {
+            top: 246px;
+            left: 820px;
+            position: absolute;
+            color: #1b48ab;
+        }
+        
+        .fivet {
+            position: absolute;
+            color: rgb(77, 74, 74);
+            left: 800px;
+            top: 316px;
+            font-size: 50px;
+            text-shadow: -6px -2px #cac9d5;
+        }
+        
+        .fivem {
+            position: absolute;
+            color: #1b48ab;
+            top: 376px;
+            left: 820px;
+            font-size: 20px;
+        }
+        
+        .fiveda {
+            top: 408px;
+            left: 820px;
+            position: absolute;
+            color: #1b48ab;
+        }
+        
+        .lesson {
+            float: left;
+            width: 17%;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        
+        .lesson-icon {
+            position: relative;
+        }
+        
+        .lesson-icon p {
+            position: absolute;
+            top: 44%;
+            width: 100%;
+            color: white;
+        }
+        
+        .lesson-icon img {
+            height: 300px;
+            width: 300px;
+        }
+        
+        .foot {
+            width: 100%;
+            height: 200px;
+            background-color: #1b48ab;
+            position: relative;
+        }
+        
+        .btn-wrapper {
+            position: absolute;
+            top: 428px;
+            left: 135px;
+        }
+        
+        .btn-wrapper a {
+            margin-right: 20px;
+        }
+        
+        .ba {
+            background-color: white;
+            right: 60px;
+            top: 30px;
+            height: 74px;
+            width: 215px;
+            border-radius: 62px;
+            position: absolute;
+        }
+        
+        .ba .link {
+            position: absolute;
+            top: 10px;
+            right: 145px;
+        }
+        
+        .ba .mail {
+            position: absolute;
+            top: 10px;
+            right: 83px;
+        }
+        
+        .ba .git {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+        }
+        
+        .bot {
+            color: white;
+            bottom: 0%;
+            left: 42%;
+            position: absolute;
+        }
+        
+        .add {
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back ">
+        <h4 class="ri">Hey, I'M</h4>
+        <h1 class="r ">RITESH RATHOD</h1>
+        <h1 class="w ">Web Developer & Programmer</h1>
+
+        <img src="c.gif">
+
+
+    </div>
+    <div class="btn-wrapper ri">
+        <a href="https://www.linkedin.com/in/ritesh-rathod-26054a183/" target="_blank"><img src="https://icons8.com/vue-static/landings/animated-icons-new/icons/color/linkedin-circled-shake/linkedin-circled-shake_192.gif" height="50px" width="50px"></a>
+
+        <a href="mailto:rnrathod16@gmail.com" target="_blank"><img src="https://icons8.com/vue-static/landings/animated-icons-new/icons/color/open-letter/open-letter.gif" height="50px" width="50px"></a>
+        <a href="https://github.com/rnrathod16"><img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" height="50px" width="50px"></a>
+
+    </div>
+
+
+    <div class="back2">
+        <div class="bl">
+            <h1>About Me</h1>
+        </div>
+        <div class="gri">
+            <div class="p">
+                <p class="para ">Hey, I am an Engineer intend to build a career with an organisation with dedicated people which will help me to explore myself, I’m a type person Once I say I’ll do something, I will complete it at any chance I am willing to work as a
+                    key player In challenging and creative environment.</p>
+            </div>
+            <div class="new">
+                <img src="2.svg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="back3">
+        <h1 class="r">Skills</h1>
+        <div class="skills">
+            <li>
+                <h3>React</h3><span class="bar"><span class="ct"></span></span>
+            </li>
+            <li>
+                <h3>NodeJS</h3><span class="bar"><span class="NodeJS"></span></span>
+            </li>
+            <li>
+                <h3>ExpressJS</h3><span class="bar"><span class="ExpressJS"></span></span>
+            </li>
+            <li>
+                <h3>MongoDB</h3><span class="bar"><span class="MongoDB"></span></span>
+            </li>
+            <li>
+                <h3>PHP</h3><span class="bar"><span class="PHP"></span></span>
+            </li>
+
+            <li>
+                <h3>MySQL</h3><span class="bar"><span class="MySQL"></span></span>
+            </li>
+        </div>
+        <img class="plane" src="3.gif" alt="Lo">
+        <div class="skills2">
+            <li>
+                <h3>HTML5</h3><span class="bar"><span class="Html"></span></span>
+            </li>
+            <li>
+                <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+            </li>
+            <li>
+                <h3>Javascript</h3><span class="bar"><span class="Javascript"></span></span>
+            </li>
+            <li>
+                <h3>Linux</h3><span class="bar"><span class="Linux"></span></span>
+            </li>
+            <li>
+                <h3>C++</h3><span class="bar"><span class="cpp"></span></span>
+            </li>
+            <li>
+                <h3>C Language</h3><span class="bar"><span class="c"></span></span>
+            </li>
+        </div>
+
+    </div>
+
+    <!-- <div class="back4">
+        <div class="bl">
+            <h1>Projects</h1>
+        </div>
+        <div class="project-title">
+            <div class="lesson">
+                <div class="lesson-icon">
+
+                    <a href="https://uniqueebase.000webhostapp.com/" target="_blank"><img src="e.png"></a>
+
+                </div>
+
+
+            </div>
+            <div class="lesson">
+                <div class="lesson-icon">
+
+                    <a href="https://rnrathod.000webhostapp.com/" target="_blank"><img src="d.png"></a>
+
+                </div>
+
+            </div>
+            <div class="lesson">
+                <div class="lesson-icon">
+
+                    <a href="https://smokedb.000webhostapp.com/" target="_blank"><img src="s.png"></a>
+
+                </div>
+
+
+            </div>
+            <div class="lesson">
+                <div class="lesson-icon">
+
+                    <a href="https://github.com/rnrathod16/C-Program-Game" target="_blank"><img src="cl.png"></a>
+
+                </div>
+
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="back4">
+
+        <div class="bl">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="intern">
+            <div class="one">
+                <h5 class="da">15 September 2020 - 30 July 2021</h5>
+                <h1 class="t">Web Developer</h1>
+                <h3 class="m">SwaPra Technology</h3>
+            </div>
+            <div class="two">
+                <h5 class="twoda">13 June 2020 - 13 August 2021</h5>
+                <h1 class="twot">Software Developer</h1>
+                <h3 class="twom">CodeKul</h3>
+            </div>
+            <div class="three">
+                <h5 class="threeda">10 July 2021 - 15 August 2021</h5>
+                <h1 class="threet">Linux Mentor</h1>
+                <h3 class="threem">DevIncept</h3>
+            </div>
+            <div class="four">
+                <h5 class="fourda">1 June 2021 - 31 July 2021</h5>
+                <h1 class="fourt">Program Manager</h1>
+                <h3 class="fourm">DevIncept</h3>
+            </div>
+            <div class="five">
+                <h5 class="fiveda">1 July 2021 - 31 July 2021</h5>
+                <h1 class="fivet">Web Developer</h1>
+                <h3 class="fivem">Spark Foundation</h3>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="back4 ">
+
+        <div class="bl">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="gri ">
+
+            <div class="container col-md-7 mt-5 shadow-lg p-3 mb-7 bg-white rounded">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="email" " class="form-control " id="exampleInputPassword1 " placeholder="Enter Your Email ">
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1 ">Mobile Number</label>
+                    <input type="number " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter Your Number ">
+                    
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1 ">Query Heading</label>
+                    <input type="text " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter Your Query Title ">
+
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleFormControlTextarea1 ">Describe Your Concern</label>
+                    <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 " placeholder="Concern "></textarea>
+                  </div>
+                <button type="submit " class="btn btn-primary mb-2 ">Submit</button>
+            </form>
+        </div>
+        <div class="new ">
+            <img src="contact.svg ">
+        </div>
+    </div>
+    </div>
+    <footer class="foot ">
+
+       
+            <div class="ba ">
+                <a class="link " href="https://www.linkedin.com/in/ritesh-rathod-26054a183/ " target="_blank "><img src="https://icons8.com/vue-static/landings/animated-icons-new/icons/color/linkedin-circled-shake/linkedin-circled-shake_192.gif
+                            " height="50px " width="50px "></a>
+        
+                <a class="mail " href="mailto:rnrathod16@gmail.com " target="_blank "><img src="https://icons8.com/vue-static/landings/animated-icons-new/icons/color/open-letter/open-letter.gif " height="50px " width="50px "></a>
+                <a class="git " href="https://github.com/rnrathod16 "><img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif " height="50px " width="50px "></a>
+        
+            </div>
+
+            <div class="bot ">
+                <h3>Copyright © 2021</h3>
+            </div>
+            <div class="add ">
+                <p>Suryaketu Nagar, Khat Road Bhandara - 441904</p>
+                <p>Email :- rnrathod16@gmail.com</p>
+            </div>
+    </footer>
+</body>
+
+</html>
