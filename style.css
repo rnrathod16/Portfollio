@@ -650,36 +650,38 @@
         flex-direction: row;
         background-image: url("resoponsive/s.png");
         width: 908px;
-        height: 856px;
+        height: 844px;
     }
     .back .ri {
-        left: 427px;
-        top: 182px;
+        left: 106px;
+        top: 322px;
     }
     .r {
-        left: 264px;
-        top: 235px;
+        left: 106px;
+        top: 369px;
+        font-size: 48px;
     }
     .w {
-        top: 325px;
-        left: 363px;
+        top: 437px;
+        left: 116px;
     }
     .back img {
-        height: 82px;
-        left: 471px;
-        top: 454px;
+        height: 119px;
+        left: 153px;
+        top: 617px;
     }
     .btn-wrapper {
-        top: 378px;
-        left: 409px;
+        top: 514px;
+        left: 102px;
         width: 250px;
     }
     .back .img_res {
         display: block;
         position: absolute;
-        top: 566px;
-        left: 352px;
-        height: 283px;
+        top: 152px;
+        left: 476px;
+        height: 586px;
+        width: 457px;
     }
     .back2 {
         width: 250%;
